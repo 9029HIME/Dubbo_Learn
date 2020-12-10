@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/start-demo-component/start-demo-component.iml" filepath="$PROJECT_DIR$/start-demo-component/start-demo-component.iml" />
+      <module fileurl="file://$PROJECT_DIR$/start-demo-consumer/start-demo-consumer.iml" filepath="$PROJECT_DIR$/start-demo-consumer/start-demo-consumer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/start-demo-provider/start-demo-provider.iml" filepath="$PROJECT_DIR$/start-demo-provider/start-demo-provider.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,4 @@
+# Project exclude paths
+/start-demo-component/target/
+/start-demo-consumer/target/
+/start-demo-provider/target/
