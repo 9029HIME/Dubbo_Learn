@@ -9,7 +9,7 @@ public class UserServiceImpl implements UserService {
     public User findById(Long id) {
         User user = new User();
         user.setId(id);
-        user.setUsername(String.format("我就是你要查询id为%s的用户"));
+        user.setUsername(String.format("我就是你要查询id为%s的用户",id));
         return user;
     }
 }

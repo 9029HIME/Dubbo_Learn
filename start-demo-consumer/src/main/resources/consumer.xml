@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:dubbo="http://dubbo.apache.org/schema/dubbo" xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans        http://www.springframework.org/schema/beans/spring-beans-4.3.xsd        http://dubbo.apache.org/schema/dubbo        http://dubbo.apache.org/schema/dubbo/dubbo.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <context:component-scan base-package="com.genn">
+    </context:component-scan>
+
+    <!-- 消费方应用信息，用于计算依赖关系，即提供方的服务名-->
+    <dubbo:application name="start-demo-consumer"  />
+
+    <!-- 使用zookeeper暴露服务地址 -->
+    <dubbo:registry protocol="zookeeper" address="192.168.0.103:2181" />
+
+    <!-- 需要调用哪个接口的功能-->
+    <dubbo:reference id="userService" interface="com.genn.service.UserService"/>
+
+</beans>
