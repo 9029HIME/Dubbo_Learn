@@ -6,15 +6,27 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="start-demo-provider" />
-        <module name="start-demo-component" />
+        <module name="user-service" />
+        <module name="consumer-service" />
         <module name="start-demo-consumer" />
+        <module name="component" />
+        <module name="start-demo-component" />
+        <module name="start-demo-provider" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="component" target="1.7" />
+      <module name="consumer-service" target="1.8" />
       <module name="start-demo-component" target="1.8" />
       <module name="start-demo-consumer" target="1.8" />
       <module name="start-demo-provider" target="1.8" />
+      <module name="user-service" target="1.8" />
     </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="consumer-service" options="-parameters" />
+      <module name="user-service" options="-parameters" />
+    </option>
   </component>
 </project>

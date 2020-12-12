@@ -9,6 +9,9 @@
         <option value="$PROJECT_DIR$/start-demo-provider/pom.xml" />
         <option value="$PROJECT_DIR$/start-demo-consumer/pom.xml" />
         <option value="$PROJECT_DIR$/start-demo-component/pom.xml" />
+        <option value="$PROJECT_DIR$/user-service/pom.xml" />
+        <option value="$PROJECT_DIR$/component/pom.xml" />
+        <option value="$PROJECT_DIR$/consumer-service/pom.xml" />
       </list>
     </option>
   </component>

@@ -1,0 +1,19 @@
+dubbo:
+  application:
+#    这个项目的名字
+    name: user-service
+  registry:
+    address: zookeeper://192.168.0.101:2181
+  protocol:
+    name: dubbo
+    port: 20880
+
+server:
+  port: 8081
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/db4dubbo?serverTimezone=UTC&characterEncoding=utf8&useUnicode=true&useSSL=true
+    username: root
+    password: ABC123
